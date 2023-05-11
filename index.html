@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Complete Bootstrap 4 Website Layout</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link href="style.css" rel="stylesheet">
+</head>
+<body data-spy="scroll" data-target="#navbarResponsive">
+	
+<!--Start Home Section-->
+<div class="home">
+<!-- Navigation -->
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+	<!-- <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top"> -->
+	<a class="navbar-brand" href="index.html"><img src="img/w3newbie.png"></a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+		<span class="navbar-toggle-icon"> </span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarResponsive">
+		<ul class="navbar-nav ml-auto">
+			<li class="nav-item">
+				<a class="nav-link" href="Home">Home</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="Test1">TestPage_1</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="Test2">TestPage_2</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="Portfolio">Portfolio</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="Team">Team</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="Contact">Contact</a>
+			</li>
+		</ul>
+	</div>
+</nav>
+
+<!--Start Slider-->
+<div id="slides" class="carousel slide" data-ride="carousel">
+<ul class="carousel-indicators">
+	<li data-target="#slides" data-slide-to="0"></li>
+	<li data-target="#slides" data-slide-to="1"></li>
+	<li data-target="#slides" data-slide-to="2"></li>
+</ul>
+<div class="carousel-inner">
+	<!-- Slide_1-->
+	<div class="carousel-item active" style="background-image: url(img/background.png); background-size: cover; background-repeat:no-repeat;"><!--style="background-image: url(img/background.png); background-repeat:round;"-->
+	<div class="carousel-caption">
+		 <h1 class="display-2">Welcome</h1>
+		 <h3>Responsive Bootstrap Website </h3>
+		 <button type="button" class="btn btn-outline-light btn-lg"> View</button>
+		 <button type="button" class="btn btn-primary btn-lg"> Get Started</button>
+	</div>
+	</div>
+	<!-- Slide_2-->
+	<div class="carousel-item" style="background-image: url(img/background2.png); background-size: cover; background-repeat:no-repeat;">
+	</div>
+	<!-- Slide_3-->
+	<div class="carousel-item" style="background-image: url(img/background3.png); background-size: cover; background-repeat:no-repeat;">
+	</div>
+</div><!---Ending carousel-->
+
+	<!---Prev-Next Button-->
+	<a class="carousel-control-prev" href="#slides" role="button" data-slide="prev">
+		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+	</a>
+	<a class="carousel-control-next" href="#slides" role="button" data-slide="next">
+		<span class="carousel-control-next-icon" aria-hidden="true"></span>
+	</a>
+
+</div><!--End Slider-->
+
+</div><!--End Home Section-->
+
+								<!-------------------------------------------------->
+
+<!--Info Place-->
+<div id="info" class="offset">
+<div class="col-12 narrow text-center">
+	<h1 style="text-align: center;"> TEMA BAŞLIĞI</h1>
+	<p style="text-align: center;">PARAGRAF</p>
+	<a class="btn btn-secondary btn-md" href="google.com" target="_blank">Link</a>
+</div>
+</div>
+<!--Info Place-->
+
+<!--Jumbotron-->
+<div class="containerfluid">
+	<div class="row jumbotron">
+		<div class="col-xs-12 col-sm-12 col-md-9 col-xl-10">
+			<p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt numquam laudantium natus beatae ipsa obcaecati mollitia sint, iusto laborum iure molestias unde incidunt nulla est cum? Consequuntur ipsam officia nulla.</p>	
+		</div>
+		<div class="col-xs-12 col-sm-12 col-md-3 col-xl-2">
+			<a href="#"> <button type="button" class="btn btn-outline-secondary btn-lg">Jumbotron</button> </a>
+		</div>
+	</div>
+</div>
+
+<!--- Welcome Section -->
+<div class="container-fluid paddding">
+	<div class="row Welcome text-center">
+		<div class="col-12">
+			<h1 class="display-4">Build with ease.</h1>
+		</div>
+		<hr>
+		<div class="col-12">
+			<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis sit deleniti officiis </p>
+		</div>
+	</div>
+</div>
+
+
+<!--- Three Column Section -->
+<div class="container-fluid paddding">
+	<div class="row text-center paddding">
+		<div class="col-xs-12 col-sm-6 col-md-4">
+			<i class="fas fa-code"></i>
+			<h3>HTML5</h3>
+			<p>Build with last tech of Html, html5</p>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-4">
+			<i class="fas fa-bold"></i>
+			<h3>HTML5</h3>
+			<p>Build with last tech of Bootstrap, bootstrap5</p>
+		</div>
+		<div class="col-sm-12 col-md-4">
+			<i class="fab fa-css3"></i>
+			<h3>HTML5</h3>
+			<p>Build with last tech of css, css3</p>
+		</div>
+	</div>
+	<hr class="my-4">
+</div>
+
+<!--- Two Column Section -->
+<div class="container-fluid paddding">
+	<div class="row paddding">
+		<div class="col-lg-6"><!--col-md-12 -->
+			<h2>İf you build it..</h2>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, architecto cum. Maxime excepturi, delectus ipsum officia fugiat, non deleniti hic blanditiis cupiditate laborum inventore amet natus beatae asperiores? Similique, eius?</p>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, architecto cum.</p>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, architecto cum. Maxime excepturi, delectus ipsum officia fugiat, non deleniti hic blanditiis cupiditate laborum inventore amet natus beatae asperiores? Similique, eius?</p>
+			<br>
+			<a href="#" class="btn btn-primary">Learn It</a>
+		</div>
+		<div class="col-lg-6">
+			<img src="img/desk.png" class="img-fluid">
+		</div>
+	</div>
+</div>
+ <hr class="my-4">
+
+<!--- Fixed background -->
+<figure>
+	<div class="fixed-wrap">
+		<div class="fixed"></div>
+	</div>
+</figure>
+
+<!--- Emoji Section -->
+<button class="fun" data-toggle="collapse" data-target="#emoji">click for fun :)</button>
+<div id="emoji" class="collapse">
+	<div class="container-fluid paddding">
+		<div class="row text-center">
+			<div class="col-sm-6 col-md-3">
+				<img class="gif" src="gif/chicken.gif" alt="">
+				<img class="gif" src="gif/panda.gif" alt="">
+				<img class="gif" src="gif/poo.gif" alt="">
+				<img class="gif" src="gif/unicorn.gif" alt="">
+			</div>
+		</div>
+	</div>
+</div>
+  
+<!--- Meet the team -->
+<div class="container-fluid paddding">
+	<div class="row Welcome text-center">
+		<div class="col-12">
+			<h1 class="display-4">Meet the Team</h1>
+		</div>
+	</div>
+</div>
+
+<!--- Cards -->
+<div class="container-fluid paddding">
+	<div class="row paddding">
+		<div class="col-md-4">
+			<div class="card">
+				<img class="card-img-top" src="img/team1.png">
+				<div class="card-body">
+					<h4 class="card-title">Muhammed CER</h4>
+					<p class="card-text">Lorem Ipsum -  Fugit alias doloribus quos nobis voluptas. - Muhammed CER</p>
+					<a href="#" class="btn btn-outline-secondary">Look at his Cv</a>
+				</div>
+			</div>
+		</div> <!--Team1-->
+		<div class="col-md-4">
+			<div class="card">
+				<img class="card-img-top" src="img/team2.png">
+				<div class="card-body">
+					<h4 class="card-title">Banu Ekiz</h4>
+					<p class="card-text">Lorem Ipsum -  Fugit alias doloribus quos nobis voluptas. Banu EKİZ</p>
+					<a href="#" class="btn btn-outline-secondary">Look at her Cv</a>
+				</div>
+			</div>
+		</div><!--Team2-->
+		<div class="col-md-4">
+			<div class="card">
+				<img class="card-img-top" src="img/team3.png">
+				<div class="card-body">
+					<h4 class="card-title">Ali Safa Cer</h4>
+					<p class="card-text">Lorem Ipsum -  Fugit alias doloribus quos nobis voluptas. Ali Safa  CER</p>
+					<a href="#" class="btn btn-outline-secondary">Look at his Cv</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--- Two Column Section -->
+<div class="container-fluid paddding">
+	<div class="row paddding">
+		<div class="col-lg-6"><!--col-md-12 -->
+			<h2>İf you build it..</h2>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, architecto cum. Maxime excepturi, delectus ipsum officia fugiat, non deleniti hic blanditiis cupiditate laborum inventore amet natus beatae asperiores? Similique, eius?</p>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, architecto cum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique optio, neque dolores voluptatum recusandae numquam quia nihil beatae laudantium ipsum aliquid error accusantium incidunt, sunt laborum pariatur commodi consectetur illum.</p>
+			 <br>
+
+		</div>
+		<div class="col-lg-6">
+			<img src="img/bootstrap2.png" class="img-fluid">
+		</div>
+	</div>
+	<hr class="my-4">
+</div>
+
+<!--- Connect -->
+<div class="container-fluid paddding">
+	<div class="row text-center">
+		<div class="col-12">
+			<h2>Connect Us</h2>
+		</div>
+		<div class="col-12 social paddding">
+			<a href="" > <i class="fab fa-facebook"></i> </a>
+			<a href="" > <i class="fab fa-instagram"></i> </a>
+			<a href="" > <i class="fab fa-youtube"></i> </a>
+			<a href="" > <i class="fab fa-twitter"></i> </a>
+			<a href="" > <i class="fab fa-linkedin"></i> </a>
+		</div>
+	</div>
+</div>
+
+<!--- Footer -->
+<footer>
+	<div class="container-fluid paddding">
+		<div class="row text-center">
+			<div class="col-md-4">
+				<img src="img/logo-darken.png" alt="">
+				<hr class="light">
+				<p>555-555-55-55</p>
+				<p>test@test.com</p>
+				<p>Adress 1st Street, Locate,</p>
+				<p> City, State, Turkey</p>
+			</div>
+
+			<div class="col-md-4">
+				<hr class="light">
+				<h5>Contact Column</h5>
+				<hr class="light">
+				<p>Contact Info 1</p>
+				<p>Contact Info 2</p>
+				<p>Contact Info 3</p>
+			</div>
+			
+			<div class="col-md-4">
+				<hr class="light">
+				<h5>Last Column</h5>
+				<hr class="light">
+				<p>Lorem Ipsum, 12345</p>
+				<p>Lorem Ipsum, 12345</p>
+				<p>Lorem Ipsum, 12345</p>
+				<p>Lorem Ipsum, 12345</p>
+			</div>
+
+			<div class="col-12">
+				<hr class="light-100">
+				<br>
+				<h5>&copy; muhammedcer.com</h5>
+			</div>
+
+		</div>
+	</div>
+</footer>
+
+
+
+</body>
+</html>
