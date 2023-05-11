@@ -1,0 +1,169 @@
+.about__achievements{
+    margin-top: 3rem;
+}
+
+.ach-container{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 5rem;
+}
+
+.ach-left{
+}
+
+.ach-right > p{
+    margin: 1.6rem 0 2.5rem;
+}
+
+.ach_cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1.5rem;
+}
+
+.achs{
+    background: var(--color-bg1);
+    padding: 1.6rem;
+    border-radius: 1rem;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.achs:hover{
+    background: var(--color-bg2);
+    box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
+}
+
+.card i{
+    background: var(--color-danger);
+    padding: 1.2rem;
+    border-radius: 1rem;
+    display: inline-block;
+    margin-bottom: 2rem;
+    font-size: 1.7rem;
+}
+
+.achs:nth-child(2) .fa-solid{
+    background: var(--color-success);
+}
+.achs:nth-child(3) .fa-solid{
+    background: var(--color-primary);
+}
+
+.achs p{
+    margin-top: 1rem;
+}
+
+
+
+/*  Team  */
+.team{
+    background: var(--color-bg1);
+    box-shadow: rgba(0, 0, 0, 0.5);
+}
+
+.team__container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.member{
+    background: var(--color-bg2);
+    padding: 2rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+    position: relative;/*socials için*/
+    overflow: hidden;/*ikonlar absürt konumda olduğu için..socials{right: -100%;}*/
+}
+
+.member:hover{
+    background: transparent;
+    border-color: var(--color-primary);
+}
+
+.imgage img{
+    filter: saturate(0);
+}
+.member:hover img{
+    filter: saturate(1);
+}
+
+.info *{
+    text-align: center;
+    margin-top: 1.4rem;
+}
+
+.info p{
+    color: var(--color-light);
+}
+
+.socials{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); 
+    right: -100%;/*0 iken ikon divim istediğim yerde. Ama hover olunca istediğim yere gelsin*/
+    display: flex;
+    flex-direction: column;/*alt alta için flex direction! ama konumlandırmak için flex ve relative gerekli*/
+    background: var(--color-primary);
+    border-radius: 1rem 0 0 1rem;
+    box-shadow: -2rem 0 2rem rgba(0, 0, 0, 0.3);
+    transition: .4s;
+}
+.member:hover .socials{
+    right: 0;
+}
+
+.socials a{
+    padding: 1rem; /*ikonların bulunduğu divi genişletti.*/
+}
+
+
+/**** Media Queries (TABLET) *****/
+
+@media screen and (max-width: 1024px) {
+  
+.about__achievements{
+    margin-top: 2rem;
+}
+
+.ach-container{
+    grid-template-columns: 1fr;
+    gap: 4rem;
+}
+
+.ach-left{
+    width: 80%;
+    margin: 0 auto; /*resmi ortalaması için*/
+}
+
+.team__container{
+    grid-template-columns: repeat(3,1fr);
+    gap: 1.5rem;
+}
+
+.member{
+    padding: 1rem;
+}
+
+}
+
+
+/**** Media Queries (PHONES) *****/
+
+@media screen and (max-width: 600px) {
+    
+.ach_cards,.team__container{
+ grid-template-columns: 1fr 1fr;
+ gap: 0.7rem;
+}
+
+.member{
+    padding: 0;
+}
+
+.member p{
+    margin-bottom: 1.5rem;
+}
+
+}
